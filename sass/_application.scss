@@ -1,0 +1,60 @@
+@mixin vgutters {
+    margin: {
+        top: $vgutter;
+        bottom: $vgutter;
+    }
+}
+
+@mixin sans-serif($size: 16px, $weight: normal) {
+    font: {
+        family: "Verdana", sans-serif;
+        weight: $weight;
+        size: $size;
+    }
+}
+
+@mixin serif($size: 16px, $weight: normal) {
+    font: {
+        family: serif;
+        weight: $weight;
+        size: $size;
+    }
+}
+
+
+
+
+
+
+#wrapper {
+    @include grid-container;
+
+
+}
+
+header {
+    @include grid(24);
+    @include alpha;
+    @include omega;
+
+    @include vgutters;
+
+    background-color: $pink;
+}
+
+#content {
+    @include grid(24);
+    @include alpha;
+    @include omega;
+
+    background-color: $light-green;
+
+}
+
+footer {
+    @include grid(24);
+    @include alpha;
+    @include omega;
+
+    background-color: $pink;
+}

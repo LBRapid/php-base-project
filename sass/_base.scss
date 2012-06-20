@@ -1,0 +1,12 @@
+@import "colors";
+@import "grid";
+
+//compass vars
+
+
+//layout vars
+$vgutters: 40px;
+
+@import "compass";
+//@import "normalize"; //normalize seems to be a better practice than resets, keeps some useful stuff like margins around certain elements
+
